@@ -19,7 +19,8 @@
             "key": "Country",
             "fields": ["Deaths"]
         }
-    }
+    },
+        {"calculate": "datum.Deaths + 0.1", "as": "Total Deaths"}
     ],
     "projection":{
         "type": "equirectangular"
